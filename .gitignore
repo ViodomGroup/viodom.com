@@ -1,0 +1,7 @@
+node_modules
+dist
+lib
+build
+private
+.env
+config.json

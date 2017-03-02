@@ -1,0 +1,15 @@
+{
+  "name": "@viodom/viodom.com",
+  "version": "0.1.0",
+  "scripts": {
+		"dev": "serve public",
+    "stop": "forever stop viodom.com",
+    "restart": "npm run stop && npm run start",
+    "start": "npm run build && NODE_ENV=production forever start -a --uid 'viodom.com' serve public"
+  },
+  "dependencies": {
+    "serve": "4.0.1"
+  },
+  "devDependencies": {},
+  "peerDependencies": {}
+}
